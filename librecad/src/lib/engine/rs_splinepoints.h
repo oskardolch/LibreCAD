@@ -3,25 +3,21 @@
 ** This file is part of the LibreCAD project, a 2D CAD program
 **
 ** Copyright (C) 2010 R. van Twisk (librecad@rvt.dds.nl)
-** Copyright (C) 2001-2003 RibbonSoft. All rights reserved.
-**
-**
-** This file may be distributed and/or modified under the terms of the
-** GNU General Public License version 2 as published by the Free Software
-** Foundation and appearing in the file gpl-2.0.txt included in the
-** packaging of this file.
-**
-** This program is distributed in the hope that it will be useful,
-** but WITHOUT ANY WARRANTY; without even the implied warranty of
-** MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-** GNU General Public License for more details.
-**
-** You should have received a copy of the GNU General Public License
-** along with this program; if not, write to the Free Software
-** Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
-**
-** This copyright notice MUST APPEAR in all copies of the script!
-**
+** Copyright (C) 2014 Dongxu Li (dongxuli2011@gmail.com)
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 **********************************************************************/
 
 
@@ -36,20 +32,20 @@
 /**
  * Holds the data that defines a line.
  */
-class RS_SplinePointsData
+class LC_SplinePointsData
 {
 public:
 	/**
 	* Default constructor. Leaves the data object uninitialized.
 	*/
-	RS_SplinePointsData() {}
+    LC_SplinePointsData() = default;
 
-	RS_SplinePointsData(bool closed)
+    LC_SplinePointsData(bool closed)
 	{
 		this->closed = closed;
 	}
 
-	RS_SplinePointsData(const RS_SplinePointsData& ld)
+    LC_SplinePointsData(const LC_SplinePointsData& ld)
 	{
 		this->closed = ld.closed;
 		for(int i = 0; i < ld.splinePoints.count(); i++)
@@ -58,7 +54,7 @@ public:
 		}
 	}
 
-	friend std::ostream& operator << (std::ostream& os, const RS_SplinePointsData& ld)
+    friend std::ostream& operator << (std::ostream& os, const LC_SplinePointsData& ld)
 	{
 		os << "( closed: " << ld.closed << ")";
 		return os;
@@ -76,7 +72,7 @@ public:
  *
  * @author Pavel Krejcir
  */
-class RS_SplinePoints : public RS_AtomicEntity // RS_EntityContainer
+class LC_SplinePoints : public RS_AtomicEntity // RS_EntityContainer
 {
 private:
 	RS_Vector dynPoint;
@@ -87,10 +83,10 @@ private:
 	void UpdateControlPoints();
 	void UpdateQuadExtent(const RS_Vector& x1, const RS_Vector& c1, const RS_Vector& x2);
 public:
-	RS_SplinePointsData data;
+    LC_SplinePointsData data;
 public:
-	RS_SplinePoints(RS_EntityContainer* parent, const RS_SplinePointsData& d);
-	virtual ~RS_SplinePoints();
+    LC_SplinePoints(RS_EntityContainer* parent, const LC_SplinePointsData& d);
+    virtual ~LC_SplinePoints();
 	virtual RS_Entity* clone();
 
 	/**	@return RS2::EntitySpline */
@@ -106,7 +102,7 @@ public:
 	}
 
 	/** @return Copy of data that defines the spline. */
-	RS_SplinePointsData getData() const
+    LC_SplinePointsData getData() const
 	{
 		return data;
 	}
@@ -233,7 +229,7 @@ public:
 	virtual void draw(RS_Painter* painter, RS_GraphicView* view, double& patternOffset);
 	QList<RS_Vector> getPoints();
 
-	friend std::ostream& operator << (std::ostream& os, const RS_SplinePoints& l);
+    friend std::ostream& operator << (std::ostream& os, const LC_SplinePoints& l);
 
 	virtual void calculateBorders();
 };

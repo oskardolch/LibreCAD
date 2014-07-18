@@ -3,7 +3,7 @@
 ** This file is part of the LibreCAD project, a 2D CAD program
 **
 ** Copyright (C) 2010 R. van Twisk (librecad@rvt.dds.nl)
-** Copyright (C) 2001-2003 RibbonSoft. All rights reserved.
+** Copyright (C) 2014 Dongxu Li (dongxuli2011@gmail.com)
 **
 **
 ** This file may be distributed and/or modified under the terms of the
@@ -32,20 +32,20 @@
 #include "rs_commands.h"
 #include "rs_commandevent.h"
 
-RS_ActionDrawSplinePoints::RS_ActionDrawSplinePoints(RS_EntityContainer& container,
+LC_ActionDrawSplinePoints::LC_ActionDrawSplinePoints(RS_EntityContainer& container,
 	RS_GraphicView& graphicView) : RS_PreviewActionInterface("Draw splines through points",
 	container, graphicView), spline(NULL)
 {
 	spline = NULL;
-	data = RS_SplinePointsData(false);
+    data = LC_SplinePointsData(false);
 }
 
-RS_ActionDrawSplinePoints::~RS_ActionDrawSplinePoints()
+LC_ActionDrawSplinePoints::~LC_ActionDrawSplinePoints()
 {
 	clear();
 }
 
-QAction* RS_ActionDrawSplinePoints::createGUIAction(RS2::ActionType /*type*/, QObject* /*parent*/)
+QAction* LC_ActionDrawSplinePoints::createGUIAction(RS2::ActionType /*type*/, QObject* /*parent*/)
 {
 	QAction* action = new QAction(tr("&Spline through points"),  NULL);
 	action->setIcon(QIcon(":/extui/menuspline.png"));
@@ -53,30 +53,30 @@ QAction* RS_ActionDrawSplinePoints::createGUIAction(RS2::ActionType /*type*/, QO
 	return action;
 }
 
-void RS_ActionDrawSplinePoints::clear()
+void LC_ActionDrawSplinePoints::clear()
 {
 	if(spline) delete spline;
 	spline = NULL;
 }
 
-void RS_ActionDrawSplinePoints::reset()
+void LC_ActionDrawSplinePoints::reset()
 {
 	clear();
-	data = RS_SplinePointsData(false);
+    data = LC_SplinePointsData(false);
 	undoBuffer.clear();
 }
 
-void RS_ActionDrawSplinePoints::init(int status)
+void LC_ActionDrawSplinePoints::init(int status)
 {
 	RS_PreviewActionInterface::init(status);
 	reset();
 }
 
-void RS_ActionDrawSplinePoints::trigger()
+void LC_ActionDrawSplinePoints::trigger()
 {
 	if(!spline) return;
 
-	RS_SplinePoints *sp = new RS_SplinePoints(container, spline->data);
+    LC_SplinePoints *sp = new LC_SplinePoints(container, spline->data);
 
 	deletePreview();
 	spline = NULL;
@@ -107,7 +107,7 @@ void RS_ActionDrawSplinePoints::trigger()
 	setStatus(SetStartPoint);
 }
 
-void RS_ActionDrawSplinePoints::mouseMoveEvent(QMouseEvent* e)
+void LC_ActionDrawSplinePoints::mouseMoveEvent(QMouseEvent* e)
 {
 	RS_DEBUG->print("RS_ActionDrawSplinePoints::mouseMoveEvent begin");
 
@@ -121,7 +121,7 @@ void RS_ActionDrawSplinePoints::mouseMoveEvent(QMouseEvent* e)
 	RS_DEBUG->print("RS_ActionDrawSplinePoints::mouseMoveEvent end");
 }
 
-void RS_ActionDrawSplinePoints::mouseReleaseEvent(QMouseEvent* e)
+void LC_ActionDrawSplinePoints::mouseReleaseEvent(QMouseEvent* e)
 {
 	if(e->button() == Qt::LeftButton)
 	{
@@ -138,7 +138,7 @@ void RS_ActionDrawSplinePoints::mouseReleaseEvent(QMouseEvent* e)
 	}
 }
 
-void RS_ActionDrawSplinePoints::coordinateEvent(RS_CoordinateEvent* e)
+void LC_ActionDrawSplinePoints::coordinateEvent(RS_CoordinateEvent* e)
 {
 	if(e == NULL) return;
 
@@ -150,7 +150,7 @@ void RS_ActionDrawSplinePoints::coordinateEvent(RS_CoordinateEvent* e)
 		undoBuffer.clear();
 		if(spline == NULL)
 		{
-			spline = new RS_SplinePoints(container, data);
+            spline = new LC_SplinePoints(container, data);
 			spline->setInsert(true);
 			spline->addPoint(mouse);
 			preview->addEntity(spline);
@@ -176,7 +176,7 @@ void RS_ActionDrawSplinePoints::coordinateEvent(RS_CoordinateEvent* e)
 	}
 }
 
-void RS_ActionDrawSplinePoints::commandEvent(RS_CommandEvent* e)
+void LC_ActionDrawSplinePoints::commandEvent(RS_CommandEvent* e)
 {
 	QString c = e->getCommand().toLower();
 
@@ -209,7 +209,7 @@ void RS_ActionDrawSplinePoints::commandEvent(RS_CommandEvent* e)
 	}
 }
 
-QStringList RS_ActionDrawSplinePoints::getAvailableCommands()
+QStringList LC_ActionDrawSplinePoints::getAvailableCommands()
 {
 	QStringList cmd;
 
@@ -238,7 +238,7 @@ QStringList RS_ActionDrawSplinePoints::getAvailableCommands()
 	return cmd;
 }
 
-void RS_ActionDrawSplinePoints::updateMouseButtonHints()
+void LC_ActionDrawSplinePoints::updateMouseButtonHints()
 {
 	switch (getStatus())
 	{
@@ -284,19 +284,19 @@ void RS_ActionDrawSplinePoints::updateMouseButtonHints()
 	}
 }
 
-void RS_ActionDrawSplinePoints::showOptions()
+void LC_ActionDrawSplinePoints::showOptions()
 {
 	RS_ActionInterface::showOptions();
 	RS_DIALOGFACTORY->requestOptions(this, true);
 }
 
-void RS_ActionDrawSplinePoints::hideOptions()
+void LC_ActionDrawSplinePoints::hideOptions()
 {
 	RS_ActionInterface::hideOptions();
 	RS_DIALOGFACTORY->requestOptions(this, false);
 }
 
-void RS_ActionDrawSplinePoints::updateMouseCursor()
+void LC_ActionDrawSplinePoints::updateMouseCursor()
 {
 	graphicView->setMouseCursor(RS2::CadCursor);
 }
@@ -330,7 +330,7 @@ void RS_ActionDrawSplinePoints::close() {
 }
 */
 
-void RS_ActionDrawSplinePoints::undo()
+void LC_ActionDrawSplinePoints::undo()
 {
 	if(!spline)
 	{
@@ -362,7 +362,7 @@ void RS_ActionDrawSplinePoints::undo()
 	}
 }
 
-void RS_ActionDrawSplinePoints::redo()
+void LC_ActionDrawSplinePoints::redo()
 {
 	int iBufLen = undoBuffer.count();
 	if(iBufLen > 1)
