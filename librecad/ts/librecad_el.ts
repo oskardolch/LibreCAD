@@ -35,35 +35,71 @@
     <name>LC_ActionDrawCircle2PR</name>
     <message>
         <source>2 Points, Radius</source>
-        <translation type="unfinished"></translation>
+        <translation>2 Σημεία, Ακτίνα</translation>
     </message>
     <message>
         <source>radius=%1 is too small for points selected
 distance between points=%2 is larger than diameter=%3</source>
-        <translation type="unfinished"></translation>
+        <translation>η ακτίνα=%1 είναι πολύ μικρή για τα σημεία που επιλέχτηκαν
+η απόσταση μεταξύ των σημείων=%2 είναι μεγαλύτερη από τη διάμετρο=%3</translation>
     </message>
     <message>
         <source>Select from two possible circle centers</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλέξτε μεταξύ των δυο πιθανών κέντρων του κύκλου</translation>
     </message>
     <message>
         <source>Specify first point</source>
-        <translation type="unfinished"></translation>
+        <translation>Καθορίστε το πρώτο σημείο</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation type="unfinished">Ακύρωση</translation>
+        <translation>Ακύρωση</translation>
     </message>
     <message>
         <source>Specify second point</source>
-        <translation type="unfinished">Καθορίστε το δεύτερο σημείο</translation>
+        <translation>Καθορίστε το δεύτερο σημείο</translation>
     </message>
     <message>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Πίσω</translation>
     </message>
     <message>
         <source>Select circle center</source>
+        <translation>Καθορίστε το κέντρο του κύκλου</translation>
+    </message>
+</context>
+<context>
+    <name>LC_ActionDrawSplinePoints</name>
+    <message>
+        <source>&amp;Spline through points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Specify first control point</source>
+        <translation>Καθορίστε το πρώτο σημείο ελέγχου</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Ακύρωση</translation>
+    </message>
+    <message>
+        <source>Specify next control point or [%1]</source>
+        <translation>Καθορίστε το επόμενο σημείο ελέγχου ή [%1]</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Πίσω</translation>
+    </message>
+    <message>
+        <source>Specify next control point</source>
+        <translation>Καθορίστε το επόμενο σημείο ελέγχου</translation>
+    </message>
+    <message>
+        <source>Cannot undo: Not enough entities defined yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot undo: Nothing could be redone.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -424,7 +460,7 @@ You can save your work now.</source>
     </message>
     <message>
         <source>&amp;Spline</source>
-        <translation type="obsolete">&amp;Καμπύλη</translation>
+        <translation>&amp;Καμπύλη</translation>
     </message>
     <message>
         <source>Running script &apos;%1&apos;</source>
@@ -2852,7 +2888,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Round</source>
-        <translation>Στρογγύλευση</translation>
+        <translation type="obsolete">Στρογγύλευση</translation>
     </message>
     <message>
         <source>Bevel</source>
@@ -2917,6 +2953,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Lengthen</source>
         <translation type="unfinished">Επιμήκυνση</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fillet, rounding of an interior or exterior corner&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3120,6 +3160,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Spline</source>
         <translation>Καμπύλη Spline</translation>
+    </message>
+    <message>
+        <source>Interpolation Spline</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -9295,6 +9339,10 @@ Do you want to replace it?</source>
         <source>Hatch Error: Undefined Error!</source>
         <translation>Σφάλμα διαγράμμισης: Μη ορισμένο σφάλμα!</translation>
     </message>
+    <message>
+        <source>Total hatch area = %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RS_ActionDrawImage</name>
@@ -10832,7 +10880,11 @@ Do you want to replace it?</source>
     </message>
     <message>
         <source>Entity must be a line, arc, circle or ellipse.</source>
-        <translation>Η οντότητα πρέπει να είναι γραμμή, τόξο, κύκλος ή έλλειψη.</translation>
+        <translation type="obsolete">Η οντότητα πρέπει να είναι γραμμή, τόξο, κύκλος ή έλλειψη.</translation>
+    </message>
+    <message>
+        <source>Entity must be a line, arc, circle, ellipse or interpolation spline.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -11163,7 +11215,7 @@ Do you want to replace it?</source>
     </message>
     <message>
         <source>&amp;Round</source>
-        <translation>&amp;Στρογγύλευση</translation>
+        <translation type="obsolete">&amp;Στρογγύλευση</translation>
     </message>
     <message>
         <source>Round Entities</source>
@@ -11192,6 +11244,10 @@ Do you want to replace it?</source>
     <message>
         <source>Cancel</source>
         <translation>Ακύρωση</translation>
+    </message>
+    <message>
+        <source>&amp;Fillet</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -13158,6 +13214,19 @@ Do you want to replace it?</source>
     </message>
     <message>
         <source>rv</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <comment>snap - set relative zero position</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>rz</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

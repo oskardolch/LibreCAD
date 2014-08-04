@@ -69,6 +69,41 @@ Abstand zwischen den Punkten=%2 ist größer als der Durchmesser=%3</translation
     </message>
 </context>
 <context>
+    <name>LC_ActionDrawSplinePoints</name>
+    <message>
+        <source>&amp;Spline through points</source>
+        <translation>&amp;Spline durch Punkte</translation>
+    </message>
+    <message>
+        <source>Specify first control point</source>
+        <translation>Ersten Kontrollpunkt bestimmen</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation>Abbrechen</translation>
+    </message>
+    <message>
+        <source>Specify next control point or [%1]</source>
+        <translation>Nächsten Kontrollpunkt bestimmen oder [%1]</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation>Zurück</translation>
+    </message>
+    <message>
+        <source>Specify next control point</source>
+        <translation>Nächsten Kontrollpunkt bestimmen</translation>
+    </message>
+    <message>
+        <source>Cannot undo: Not enough entities defined yet.</source>
+        <translation>Rückgängig unmöglich: Nicht genügend Objekte definiert.</translation>
+    </message>
+    <message>
+        <source>Cannot undo: Nothing could be redone.</source>
+        <translation>Rückgängig unmöglich: Nichts zum Rückgängig machen.</translation>
+    </message>
+</context>
+<context>
     <name>QC_ActionGetEnt</name>
     <message>
         <source>Select object:</source>
@@ -474,7 +509,7 @@ Sie können Ihre Arbeit jetzt speichern.</translation>
     </message>
     <message>
         <source>&amp;Spline</source>
-        <translation type="obsolete">&amp;Spline</translation>
+        <translation>&amp;Spline</translation>
     </message>
     <message>
         <source>Running script &apos;%1&apos;</source>
@@ -3058,7 +3093,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Round</source>
-        <translation>Abrunden</translation>
+        <translation type="obsolete">Abrunden</translation>
     </message>
     <message>
         <source>Bevel</source>
@@ -3123,6 +3158,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Lengthen</source>
         <translation>Verlängern</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fillet, rounding of an interior or exterior corner&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Abrunden, eine Innen- oder Außenecke durch einen Radius ersetzen&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -3326,6 +3365,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Spline</source>
         <translation>Spline</translation>
+    </message>
+    <message>
+        <source>Interpolation Spline</source>
+        <translation>Spline Interpolation</translation>
     </message>
 </context>
 <context>
@@ -5687,11 +5730,11 @@ Sie können diese Einstellungen auch später im Optionen Dialog von QCad ändern
     </message>
     <message>
         <source>Splash Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Begrüßungsfenster</translation>
     </message>
     <message>
         <source>Display Splash</source>
-        <translation type="unfinished"></translation>
+        <translation>Begrüßungsfenster anzeigen</translation>
     </message>
 </context>
 <context>
@@ -9773,6 +9816,10 @@ Wollen Sie die Datei überschreiben?</translation>
         <source>Hatch Error: Undefined Error!</source>
         <translation>Schraffur Fehler: Unbekannter Fehler!</translation>
     </message>
+    <message>
+        <source>Total hatch area = %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RS_ActionDrawImage</name>
@@ -11368,7 +11415,11 @@ Wollen Sie die Datei überschreiben?</translation>
     </message>
     <message>
         <source>Entity must be a line, arc, circle or ellipse.</source>
-        <translation>Objekt muss eine Linie, Bogen, Kreis oder Ellipse sein.</translation>
+        <translation type="obsolete">Objekt muss eine Linie, Bogen, Kreis oder Ellipse sein.</translation>
+    </message>
+    <message>
+        <source>Entity must be a line, arc, circle, ellipse or interpolation spline.</source>
+        <translation>Objekt muss eine Linie, Bogen, Kreis, Ellipse oder Spline Interpolation sein.</translation>
     </message>
 </context>
 <context>
@@ -11752,11 +11803,15 @@ Wollen Sie die Datei überschreiben?</translation>
     </message>
     <message>
         <source>&amp;Round</source>
-        <translation>Run&amp;den</translation>
+        <translation type="obsolete">Run&amp;den</translation>
     </message>
     <message>
         <source>Round Entities</source>
         <translation type="obsolete">Ecken runden</translation>
+    </message>
+    <message>
+        <source>&amp;Fillet</source>
+        <translation>&amp;Abrunden</translation>
     </message>
 </context>
 <context>
@@ -13799,6 +13854,19 @@ Wollen Sie die Datei überschreiben?</translation>
     <message>
         <source>rv</source>
         <translation>ev</translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <translation>setrelativezero</translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <comment>snap - set relative zero position</comment>
+        <translation>setrelativezero</translation>
+    </message>
+    <message>
+        <source>rz</source>
+        <translation>rz</translation>
     </message>
 </context>
 </TS>

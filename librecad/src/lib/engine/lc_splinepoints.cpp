@@ -609,10 +609,17 @@ double GetDistToQuadSquared(const RS_Vector& coord, const RS_Vector& x1,
 	bool bResSet = false;
 	double dDist, dNewDist;
 	double dRes;
+<<<<<<< HEAD
 	for(int i = 0; i < dSol.size(); i++)
 	{
 		dNewDist = GetDistToQuadAtPointSquared(coord, x1, c1, x2, dSol[i]);
 		SetNewDist(bResSet, dNewDist, dSol[i], &dDist, &dRes);
+=======
+    for(const double& dSolValue: dSol)
+	{
+        dNewDist = GetDistToQuadAtPointSquared(coord, x1, c1, x2, dSolValue);
+        SetNewDist(bResSet, dNewDist, dSolValue, &dDist, &dRes);
+>>>>>>> upstream/master
 		bResSet = true;
 	}
 
@@ -783,7 +790,11 @@ int LC_SplinePoints::GetNearestQuad(const RS_Vector& coord,
 }
 
 RS_Vector LC_SplinePoints::getNearestPointOnEntity(const RS_Vector& coord,
+<<<<<<< HEAD
 	bool onEntity, double* dist, RS_Entity** entity) const
+=======
+    bool /*onEntity*/, double* dist, RS_Entity** entity) const
+>>>>>>> upstream/master
 {
 	RS_Vector vStart(false), vControl(false), vEnd(false), vRes(false);
 
@@ -805,7 +816,11 @@ RS_Vector LC_SplinePoints::getNearestPointOnEntity(const RS_Vector& coord,
 }
 
 double LC_SplinePoints::getDistanceToPoint(const RS_Vector& coord,
+<<<<<<< HEAD
 	RS_Entity** entity, RS2::ResolveLevel level, double solidDist) const
+=======
+    RS_Entity** entity, RS2::ResolveLevel /*level*/, double /*solidDist*/) const
+>>>>>>> upstream/master
 {
 	double dDist = RS_MAXDOUBLE;
 	getNearestPointOnEntity(coord, true, &dDist, entity);
@@ -3169,12 +3184,19 @@ void addQuadQuadIntersect(RS_VectorSolutions *pVS,
 	m.push_back(a1);
 	m.push_back(b1);
 
+<<<<<<< HEAD
 	RS_VectorSolutions pvRes = RS_Math::simultaneousQuadraticSolverFull(m);
 
 	RS_Vector vSol(false);
 	for(int i = 0; i < pvRes.size(); i++)
 	{
 		vSol = pvRes.at(i);
+=======
+    RS_VectorSolutions&& pvRes = RS_Math::simultaneousQuadraticSolverFull(m);
+
+    for(RS_Vector& vSol: pvRes.getVector())
+    {
+>>>>>>> upstream/master
 		if(vSol.x > -RS_TOLERANCE && vSol.x < 1.0 + RS_TOLERANCE &&
 			vSol.y > -RS_TOLERANCE && vSol.y < 1.0 + RS_TOLERANCE)
 		{

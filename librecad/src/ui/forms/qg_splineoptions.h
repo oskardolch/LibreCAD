@@ -30,7 +30,11 @@
 
 class RS_ActionInterface;
 class RS_ActionDrawSpline;
+<<<<<<< HEAD
 class LC_ActionDrawSplinePoints;
+=======
+//class LC_ActionDrawSplinePoints;
+>>>>>>> upstream/master
 
 class QG_SplineOptions : public QWidget, public Ui::QG_SplineOptions
 {
@@ -48,7 +52,11 @@ public slots:
 
 protected:
     RS_ActionDrawSpline* action;
+<<<<<<< HEAD
     LC_ActionDrawSplinePoints* action1;
+=======
+//    LC_ActionDrawSplinePoints* action1;
+>>>>>>> upstream/master
 
 protected slots:
     virtual void languageChange();

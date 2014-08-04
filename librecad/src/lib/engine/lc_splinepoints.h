@@ -135,7 +135,11 @@ public:
 	}
 
 	/**
+<<<<<<< HEAD
 	* Sets the closed falg of this spline.
+=======
+    * Sets the closed flag of this spline.
+>>>>>>> upstream/master
 	*/
 	void setClosed(bool c)
 	{
@@ -206,6 +210,17 @@ public:
 
 	virtual RS_Vector getNearestEndpoint(const RS_Vector& coord,
 		double* dist = NULL) const;
+<<<<<<< HEAD
+=======
+    /**
+     * @brief getNearestPointOnEntity
+     * @param coord
+     * @param onEntity, unused, because current implementation finds the nearest point on the spline
+     * @param dist
+     * @param entity
+     * @return
+     */
+>>>>>>> upstream/master
 	virtual RS_Vector getNearestPointOnEntity(const RS_Vector& coord,
 		bool onEntity = true, double* dist = NULL, RS_Entity** entity = NULL) const;
 	virtual RS_Vector getNearestCenter(const RS_Vector& coord,

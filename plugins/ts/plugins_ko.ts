@@ -15,7 +15,7 @@
     <message>
         <location filename="../importshp/importshp.cpp" line="40"/>
         <source>Import ESRI Shapefile</source>
-        <translation type="unfinished"></translation>
+        <translation>ESRI 셰이프 파일 가져오기</translation>
     </message>
 </context>
 <context>
@@ -24,27 +24,27 @@
         <location filename="../align/align.cpp" line="20"/>
         <location filename="../align/align.cpp" line="27"/>
         <source>Align</source>
-        <translation type="unfinished"></translation>
+        <translation>정렬</translation>
     </message>
     <message>
         <location filename="../align/align.cpp" line="40"/>
         <source>first base point:</source>
-        <translation type="unfinished"></translation>
+        <translation>제1 기준점</translation>
     </message>
     <message>
         <location filename="../align/align.cpp" line="42"/>
         <source>first target point:</source>
-        <translation type="unfinished"></translation>
+        <translation>제1 목표점</translation>
     </message>
     <message>
         <location filename="../align/align.cpp" line="44"/>
         <source>second base point:</source>
-        <translation type="unfinished"></translation>
+        <translation>제2 기준점</translation>
     </message>
     <message>
         <location filename="../align/align.cpp" line="46"/>
         <source>second target point:</source>
-        <translation type="unfinished"></translation>
+        <translation>제2 목표점</translation>
     </message>
 </context>
 <context>
@@ -53,7 +53,7 @@
         <location filename="../list/list.cpp" line="24"/>
         <location filename="../list/list.cpp" line="31"/>
         <source>List entities</source>
-        <translation type="unfinished"></translation>
+        <translation>구성요소 목록</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="47"/>
@@ -63,42 +63,42 @@
     <message>
         <location filename="../list/list.cpp" line="61"/>
         <source>Empty Entity</source>
-        <translation type="unfinished"></translation>
+        <translation>구성요소가 없습니다.</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="68"/>
         <source>X</source>
-        <translation type="unfinished"></translation>
+        <translation>x</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="68"/>
         <source>Y</source>
-        <translation type="unfinished"></translation>
+        <translation>Y</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="74"/>
         <source>Layer</source>
-        <translation type="unfinished"></translation>
+        <translation>도면층</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="76"/>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation>색상</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="77"/>
         <source>Line type</source>
-        <translation type="unfinished"></translation>
+        <translation>선종류</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="78"/>
         <source>Line thickness</source>
-        <translation type="unfinished"></translation>
+        <translation>선두께</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="79"/>
         <source>ID</source>
-        <translation type="unfinished"></translation>
+        <translation>ID</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="85"/>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../list/list.cpp" line="145"/>
         <source>major axis</source>
-        <translation type="unfinished"></translation>
+        <translation>주축</translation>
     </message>
     <message>
         <location filename="../list/list.cpp" line="163"/>
@@ -444,12 +444,12 @@
     <message>
         <location filename="../asciifile/asciifile.cpp" line="278"/>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">확인</translation>
     </message>
     <message>
         <location filename="../asciifile/asciifile.cpp" line="283"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">취소</translation>
     </message>
     <message>
         <location filename="../asciifile/asciifile.cpp" line="313"/>
@@ -537,12 +537,12 @@
     <message>
         <location filename="../importshp/importshp.cpp" line="75"/>
         <source>Layer</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">도면층</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="56"/>
         <source>Import ESRI Shapefile</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ESRI 셰이프 파일 가져오기</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="68"/>
@@ -569,12 +569,12 @@
     <message>
         <location filename="../importshp/importshp.cpp" line="88"/>
         <source>Color</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">색상</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="101"/>
         <source>Line type</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">선종류</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="114"/>
@@ -600,12 +600,12 @@
     <message>
         <location filename="../importshp/importshp.cpp" line="141"/>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>확인</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="142"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
     <message>
         <location filename="../importshp/importshp.cpp" line="167"/>
@@ -688,7 +688,7 @@
     <message>
         <location filename="../list/list.cpp" line="240"/>
         <source>List entities</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">구성요소 목록</translation>
     </message>
 </context>
 <context>
@@ -721,12 +721,12 @@
     <message>
         <location filename="../sample/sample.cpp" line="86"/>
         <source>Accept</source>
-        <translation type="unfinished"></translation>
+        <translation>확인</translation>
     </message>
     <message>
         <location filename="../sample/sample.cpp" line="91"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
     <message>
         <location filename="../sample/sample.cpp" line="107"/>
@@ -817,7 +817,7 @@ Use t or x in your equation as a variable/parameter.
     <message>
         <location filename="../plotequation/plotdialog.cpp" line="24"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>취소</translation>
     </message>
 </context>
 <context>
@@ -825,7 +825,7 @@ Use t or x in your equation as a variable/parameter.
     <message>
         <location filename="../asciifile/asciifile.cpp" line="177"/>
         <source>Layer:</source>
-        <translation type="unfinished"></translation>
+        <translation>도면층 :</translation>
     </message>
 </context>
 <context>
@@ -833,12 +833,12 @@ Use t or x in your equation as a variable/parameter.
     <message>
         <location filename="../asciifile/asciifile.cpp" line="210"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>스타일 : </translation>
     </message>
     <message>
         <location filename="../asciifile/asciifile.cpp" line="211"/>
         <source>Height:</source>
-        <translation type="unfinished"></translation>
+        <translation>높이 :</translation>
     </message>
     <message>
         <location filename="../asciifile/asciifile.cpp" line="212"/>

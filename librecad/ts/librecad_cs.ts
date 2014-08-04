@@ -69,6 +69,41 @@ Vzdálenost mezi body=%2 je větší než průměr=%3</translation>
     </message>
 </context>
 <context>
+    <name>LC_ActionDrawSplinePoints</name>
+    <message>
+        <source>&amp;Spline through points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Specify first control point</source>
+        <translation type="unfinished">Zadejte první řídicí bod</translation>
+    </message>
+    <message>
+        <source>Cancel</source>
+        <translation type="unfinished">Zrušit</translation>
+    </message>
+    <message>
+        <source>Specify next control point or [%1]</source>
+        <translation type="unfinished">Zadejte další řídicí bod nebo [%1]</translation>
+    </message>
+    <message>
+        <source>Back</source>
+        <translation type="unfinished">Zpět</translation>
+    </message>
+    <message>
+        <source>Specify next control point</source>
+        <translation type="unfinished">Zadejte další řídicí bod</translation>
+    </message>
+    <message>
+        <source>Cannot undo: Not enough entities defined yet.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot undo: Nothing could be redone.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>QC_ActionGetEnt</name>
     <message>
         <source>Select object:</source>
@@ -580,6 +615,10 @@ Automatické ukládání bylo vypnuto.</translation>
     <message>
         <source>Help files not found</source>
         <translation>Soubory nápovědy nenalezeny</translation>
+    </message>
+    <message>
+        <source>&amp;Spline</source>
+        <translation type="unfinished">S&amp;plajna</translation>
     </message>
 </context>
 <context>
@@ -2820,7 +2859,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Round</source>
-        <translation>Zaoblit</translation>
+        <translation type="obsolete">Zaoblit</translation>
     </message>
     <message>
         <source>Bevel</source>
@@ -2885,6 +2924,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Lengthen</source>
         <translation>Prodloužit</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Fillet, rounding of an interior or exterior corner&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -3088,6 +3131,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Spline</source>
         <translation>Splajna</translation>
+    </message>
+    <message>
+        <source>Interpolation Spline</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -5357,11 +5404,11 @@ Toto nastavení můžete později změnit v dialogu Nastavení programu.</transl
     </message>
     <message>
         <source>Splash Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Spouštěcí okno</translation>
     </message>
     <message>
         <source>Display Splash</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit spouštěcí okno</translation>
     </message>
 </context>
 <context>
@@ -9217,6 +9264,10 @@ Přejete si ho přepsat?</translation>
         <source>Hatch Error: Undefined Error!</source>
         <translation>Chyba šraf: Neznámá chyba!</translation>
     </message>
+    <message>
+        <source>Total hatch area = %1</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>RS_ActionDrawImage</name>
@@ -10758,7 +10809,11 @@ Přejete si ho přepsat?</translation>
     </message>
     <message>
         <source>Entity must be a line, arc, circle or ellipse.</source>
-        <translation>Prvkem musí být úsečka, oblouk nebo kružnice.</translation>
+        <translation type="obsolete">Prvkem musí být úsečka, oblouk nebo kružnice.</translation>
+    </message>
+    <message>
+        <source>Entity must be a line, arc, circle, ellipse or interpolation spline.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -11125,11 +11180,15 @@ Přejete si ho přepsat?</translation>
     </message>
     <message>
         <source>&amp;Round</source>
-        <translation>Z&amp;aoblit</translation>
+        <translation type="obsolete">Z&amp;aoblit</translation>
     </message>
     <message>
         <source>Round Entities</source>
         <translation type="obsolete">Vytvoří zaoblení mezi prvky</translation>
+    </message>
+    <message>
+        <source>&amp;Fillet</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -13110,6 +13169,19 @@ Přejete si ho přepsat?</translation>
     <message>
         <source>rv</source>
         <translation>ps</translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>setrelativezero</source>
+        <comment>snap - set relative zero position</comment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>rz</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
