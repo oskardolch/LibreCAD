@@ -25,10 +25,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 #define LC_ACTIONDRAWSPLINEPOINTS_H
 
 #include "rs_previewactioninterface.h"
-<<<<<<< HEAD
-=======
 #include "rs_actiondrawspline.h"
->>>>>>> upstream/master
 #include "lc_splinepoints.h"
 
 /**
@@ -36,11 +33,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  *
  * @author Pavel Krejcir
  */
-<<<<<<< HEAD
-class LC_ActionDrawSplinePoints : public RS_PreviewActionInterface
-=======
 class LC_ActionDrawSplinePoints : public RS_ActionDrawSpline
->>>>>>> upstream/master
 {
 	Q_OBJECT
 public:
@@ -83,18 +76,12 @@ public:
 	virtual void updateMouseCursor();
 	//virtual void updateToolBar();
 
-<<<<<<< HEAD
-	void setClosed(bool c);
-	bool isClosed();
-	void undo();
-=======
     virtual void setClosed(bool c);
     virtual bool isClosed();
     virtual void undo();
     //using degree=2 only
     virtual void setDegree(int /*deg*/){}
 
->>>>>>> upstream/master
 protected:
 	/**
 	* Spline data defined so far.

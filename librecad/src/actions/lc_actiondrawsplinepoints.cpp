@@ -34,19 +34,11 @@
 #include "rs_commandevent.h"
 
 LC_ActionDrawSplinePoints::LC_ActionDrawSplinePoints(RS_EntityContainer& container,
-<<<<<<< HEAD
-	RS_GraphicView& graphicView) : RS_PreviewActionInterface("Draw splines through points",
-	container, graphicView)
-{
-    data = LC_SplinePointsData(false, false);
-	spline = NULL;
-=======
     RS_GraphicView& graphicView) : RS_ActionDrawSpline( container, graphicView)
 {
     data = LC_SplinePointsData(false, false);
 	spline = NULL;
     setName("Draw spline through points");
->>>>>>> upstream/master
 }
 
 LC_ActionDrawSplinePoints::~LC_ActionDrawSplinePoints()
